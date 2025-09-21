@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+}
+@layer base {
+  html, html * {
+    @apply transition-all duration-300;
+  }
+  body,body * {
+    @apply transition-all duration-300;
+  }
+}
+@font-face {
+  font-family: yekanBakh-Regular;
+
+  src: url('../src/assets/fonts/woff/YekanBakhFaNum-Regular.woff') format("woff");
+}
+
+@font-face {
+  font-family: yekanBakh-Bold;
+
+  src: url('../src/assets/fonts/woff/YekanBakhFaNum-Bold.woff') format("woff");
+}
+
+@font-face {
+  font-family: rokh;
+
+  src: url('../src/assets/fonts/woff/Rokh-Black.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: stretch;
+
+  src: url('../src/assets/fonts/StretchPro.otf') format("opentype");
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: yekanBakh-Bold;
+  overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-attachment: fixed;
+}
+a {
+  cursor: pointer;
+}
+/* number input */
+input[type="number"] {
+  -moz-appearance: textfield; /* برای فایرفاکس */
+  appearance: textfield; /* برای مرورگرهای مدرن */
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* برای کروم و سافاری */
+  margin: 0; /* حذف margin پیش‌فرض */
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.text-stroke-main{
+  -webkit-text-stroke: 1px #001837;
+}
+.mobileMenu{
+  position: fixed;
+  right: -1500px;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  transition: all .4s;
+  width: 280px;
+}
+.mobileMenu.active{
+  right: 0;
+}
+#overlay{
+  transition: all .4s;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
+  background-color: #030303a1;
+}
+#overlay.active{
+  opacity: 70%;
+  visibility: visible;
+}
+@media (max-width: 1020px) {
+  
+}
