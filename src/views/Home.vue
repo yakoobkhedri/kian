@@ -3,7 +3,11 @@
     <section class="-mt-20">
       <div class="max-w-content mx-auto lg:px-4">
         <div class="relative !h-[360px] sm:!h-auto">
-          <img alt="img" src="../assets/img/Vector 96.png" class="hidden lg:block absolute z-10 w-[424px] h-[130px] -top-[1px] rtl:right-auto -left-1 [transform:rotateY(180deg)]" />
+          <img
+            alt="img"
+            src="../assets/img/Vector 96.png"
+            class="hidden lg:block absolute z-10 w-[424px] h-[130px] -top-[1px] rtl:right-auto -left-1 [transform:rotateY(180deg)]"
+          />
           <SwiperMain
             class="w-full relative !h-[360px] sm:!h-auto"
             :slides-per-view="1"
@@ -62,7 +66,9 @@
                       <p>موسسه استعداد یابی</p>
                       <p>اندیشه کیان!</p>
                     </div>
-                    <div class="mt-4 md:mt-14 flex items-center justify-center gap-3 sm:gap-9">
+                    <div
+                      class="mt-4 md:mt-14 flex items-center justify-center gap-3 sm:gap-9"
+                    >
                       <a
                         class="bg-[#fba311] hover:bg-[#001837] group rounded-[50px] w-24 sm:w-[113px] h-9 sm:h-[47px] text-[9px] sm:text-[11px] text-white flex items-center justify-center gap-2"
                       >
@@ -159,7 +165,9 @@
                       <p>موسسه استعداد یابی</p>
                       <p>اندیشه کیان!</p>
                     </div>
-                    <div class="mt-4 md:mt-14 flex items-center justify-center gap-3 sm:gap-9">
+                    <div
+                      class="mt-4 md:mt-14 flex items-center justify-center gap-3 sm:gap-9"
+                    >
                       <a
                         class="bg-[#fba311] hover:bg-[#001837] group rounded-[50px] w-24 sm:w-[113px] h-9 sm:h-[47px] text-[9px] sm:text-[11px] text-white flex items-center justify-center gap-2"
                       >
@@ -256,7 +264,9 @@
                       <p>موسسه استعداد یابی</p>
                       <p>اندیشه کیان!</p>
                     </div>
-                    <div class="mt-4 md:mt-14 flex items-center justify-center gap-3 sm:gap-9">
+                    <div
+                      class="mt-4 md:mt-14 flex items-center justify-center gap-3 sm:gap-9"
+                    >
                       <a
                         class="bg-[#fba311] hover:bg-[#001837] group rounded-[50px] w-24 sm:w-[113px] h-9 sm:h-[47px] text-[9px] sm:text-[11px] text-white flex items-center justify-center gap-2"
                       >
@@ -353,7 +363,9 @@
                       <p>موسسه استعداد یابی</p>
                       <p>اندیشه کیان!</p>
                     </div>
-                    <div class="mt-4 md:mt-14 flex items-center justify-center gap-3 sm:gap-9">
+                    <div
+                      class="mt-4 md:mt-14 flex items-center justify-center gap-3 sm:gap-9"
+                    >
                       <a
                         class="bg-[#fba311] hover:bg-[#001837] group rounded-[50px] w-24 sm:w-[113px] h-9 sm:h-[47px] text-[9px] sm:text-[11px] text-white flex items-center justify-center gap-2"
                       >
@@ -996,6 +1008,66 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-24">
+      <div class="max-w-content mx-auto px-4">
+        <div class="flex items-center gap-8">
+          <div class="flex-grow bg-[#eeeeee] h-[1px]"></div>
+          <h3 class="text-xs text-[#565656] font-medium flex-shrink-0">
+            جوایز و افتخارات
+          </h3>
+          <div class="flex-grow bg-[#eeeeee] h-[1px]"></div>
+        </div>
+        <div class="grid grid-cols-4 gap-4 mt-24">
+          <div>
+            <div class="text-[80px] mb-3 flex items-center justify-center">
+              <span class="text-stroke-main text-transparent">70</span>
+              <span class="text-[#001837]">+</span>
+            </div>
+            <p class="text-[#595959] text-center">استاد برجسته استعدادیابی</p>
+          </div>
+          <div>
+            <div class="text-[80px] mb-3 flex items-center justify-center">
+              <span class="text-stroke-main text-transparent">80000</span>
+              <span class="text-[#001837]">+</span>
+            </div>
+            <p class="text-[#595959] text-center">
+              آزمون دهندگانی که کشف استعداد شده
+            </p>
+          </div>
+          <div>
+            <div class="text-[80px] mb-3 flex items-center justify-center">
+              <span class="text-stroke-main text-transparent">100000</span>
+              <span class="text-[#001837]">+</span>
+            </div>
+            <p class="text-[#595959] text-center">آزمون برگزار شده</p>
+          </div>
+          <div>
+            <div class="text-[80px] mb-3 flex items-center justify-center">
+              <span class="text-stroke-main text-transparent">25</span>
+              <span class="text-[#001837]">+</span>
+            </div>
+            <p class="text-[#595959] text-center">سال سابقه خدمات</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-24">
+      <div class="max-w-content mx-auto px-4">
+        <div class="grid grid-cols-2 gap-10"> 
+           <div> 
+             <img src="../assets/img/img.jpg" class="rounded-[30px] w-full" />
+           </div>
+           <div class="py-[60px] px-[30px] rounded-[30px] bg-[#f0f2f4]"> 
+             <p class="text-[13px] font-bold text-[#001837] mb-1.5"> سوالات مشتری </p>
+             <h4 class="text-[55px] font-bold text-[#001837] leading-[70px]">
+               از پرسش های متداول ما بیشتر یاد خواهید گرفت. 
+             </h4>
+           </div>
         </div>
       </div>
     </section>
