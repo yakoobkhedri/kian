@@ -1058,16 +1058,255 @@
 
     <section class="pt-24">
       <div class="max-w-content mx-auto px-4">
-        <div class="grid grid-cols-2 gap-10"> 
-           <div> 
-             <img src="../assets/img/img.jpg" class="rounded-[30px] w-full" />
-           </div>
-           <div class="py-[60px] px-[30px] rounded-[30px] bg-[#f0f2f4]"> 
-             <p class="text-[13px] font-bold text-[#001837] mb-1.5"> سوالات مشتری </p>
-             <h4 class="text-[55px] font-bold text-[#001837] leading-[70px]">
-               از پرسش های متداول ما بیشتر یاد خواهید گرفت. 
-             </h4>
-           </div>
+        <div class="grid grid-cols-2 gap-10">
+          <div>
+            <img
+              src="../assets/img/img.jpg"
+              class="rounded-[30px] w-full h-full"
+            />
+          </div>
+          <div class="py-[60px] px-[30px] rounded-[30px] bg-[#f0f2f4]">
+            <p class="text-[13px] font-bold text-[#001837] mb-1.5">
+              سوالات مشتری
+            </p>
+            <h4
+              class="text-[55px] font-bold text-[#001837] leading-[70px] mb-12"
+            >
+              از پرسش های متداول ما بیشتر یاد خواهید گرفت.
+            </h4>
+            <div>
+              <div class="mb-5">
+                <div
+                  class="bg-white accordionBtn cursor-pointer text-[#001837] rounded-[30px] p-2 pr-10 flex items-center justify-between gap-3"
+                  @click="toggleAccordion(0)"
+                >
+                  <p>01. آزمون استعدادیابی برای چه سنینی مناسب است؟</p>
+                  <div
+                    class="w-[50px] h-[50px] rounded-full relative flex-shrink-0 bg-[#001837]"
+                  >
+                    <svg
+                      class="plus transition-all absolute inset-0 m-auto w-[14px]"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                      :class="{ hidden: activeIndex === 0 }"
+                    >
+                      <path
+                        fill="white"
+                        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="minus transition-all absolute inset-0 m-auto w-[14px]"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                      :class="{ hidden: activeIndex !== 0 }"
+                    >
+                      <path
+                        fill="white"
+                        d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="accordionBody"
+                  :class="{ hidden: activeIndex !== 0 }"
+                >
+                  <p class="py-7 px-10 text-[#616161]">
+                    آزمون های استعدادیابی موسسه اندیشه کیان برای تمام سنین
+                    برگزار و تحلیل می شوند
+                  </p>
+                </div>
+              </div>
+              <div class="mb-5">
+                <div
+                  class="bg-white accordionBtn cursor-pointer text-[#001837] rounded-[30px] p-2 pr-10 flex items-center justify-between gap-3"
+                  @click="toggleAccordion(1)"
+                >
+                  <p>02. شرکت در آزمون هزینه دارد؟</p>
+                  <div
+                    class="w-[50px] h-[50px] rounded-full relative flex-shrink-0 bg-[#001837]"
+                  >
+                    <svg
+                      class="plus transition-all absolute inset-0 m-auto w-[14px]"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                      :class="{ hidden: activeIndex === 1 }"
+                    >
+                      <path
+                        fill="white"
+                        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="minus transition-all absolute inset-0 m-auto w-[14px]"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                      :class="{ hidden: activeIndex !== 1 }"
+                    >
+                      <path
+                        fill="white"
+                        d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="accordionBody"
+                  :class="{ hidden: activeIndex !== 1 }"
+                >
+                  <p class="py-7 px-10 text-[#616161]">
+                    شرکت در آزمون استعدادیابی رایگان است
+                  </p>
+                </div>
+              </div>
+              <div>
+                <div
+                  class="bg-white accordionBtn cursor-pointer text-[#001837] rounded-[30px] p-2 pr-10 flex items-center justify-between gap-3"
+                  @click="toggleAccordion(2)"
+                >
+                  <p>03. پس از کشف استعداد آیا برای من شغل پیدا می شود</p>
+                  <div
+                    class="w-[50px] h-[50px] rounded-full relative flex-shrink-0 bg-[#001837]"
+                  >
+                    <svg
+                      class="plus transition-all absolute inset-0 m-auto w-[14px]"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                      :class="{ hidden: activeIndex === 2 }"
+                    >
+                      <path
+                        fill="white"
+                        d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                      ></path>
+                    </svg>
+                    <svg
+                      class="minus transition-all absolute inset-0 m-auto w-[14px]"
+                      viewBox="0 0 448 512"
+                      xmlns="http://www.w3.org/2000/svg"
+                      :class="{ hidden: activeIndex !== 2 }"
+                    >
+                      <path
+                        fill="white"
+                        d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div
+                  class="accordionBody"
+                  :class="{ hidden: activeIndex !== 2 }"
+                >
+                  <p class="py-7 px-10 text-[#616161]">
+                    بله در صورت تمایل می توانید استعداد خود را با صاحبان کسب و
+                    کار به اشتراک بگذارید
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-24">
+      <div class="max-w-content mx-auto px-4">
+        <div class="flex items-start justify-between gap-2 mb-12">
+          <div>
+            <p class="text-[13px] font-bold text-[#001837] mb-1.5">
+              آخرین اخبار
+            </p>
+            <h2
+              class="text-[30px] md:text-[55px] text-[#001837] leading-[52px] md:leading-[60px]"
+            >
+              آخرین مقالات ما
+            </h2>
+          </div>
+          <router-link
+            to="/"
+            class="group transition-all rounded-[30px] gap-2 bg-[#fba311] hover:bg-[#001837] text-sm text-white w-[220px] h-[52px] flex items-center justify-center"
+          >
+            <p
+              class="rounded-[30px] bg-primary h-full flex items-center justify-center"
+            >
+              مشاهده همه پست ها
+            </p>
+            <IconifyIcon
+              class="text-2xl flex-shrink-0 transition-all text-white"
+              icon="mdi:arrow-left"
+            />
+          </router-link>
+        </div>
+        <div> 
+           <SwiperMain
+            class="w-full relative !h-[360px] sm:!h-auto"
+            :slides-per-view="1"
+            :space-between="40"
+            :pagination="false"
+            :loop="false"
+            :autoplay="true"
+              :breakpoints="{
+                    768: { slidesPerView: 2 },
+                    1200: { slidesPerView: 3 },
+                  }"
+          >
+            <SwiperSlide>
+               <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
+                 <div class="overflow-hidden"> 
+                  <img alt="img" src="../assets/img/blog1.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
+                 </div>
+                 <div class="p-[30px] pb-9"> 
+                   <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">روش‌های نوین استعدادیابی بزرگسالان در ایران: راهنمای کامل و جامع</a>
+                   <div class="flex items-center justify-between gap-2"> 
+                     <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
+                     <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
+                   </div>
+                 </div>
+               </div>
+            </SwiperSlide>
+            <SwiperSlide>
+               <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
+                 <div class="overflow-hidden"> 
+                  <img alt="img" src="../assets/img/blog2.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
+                 </div>
+                 <div class="p-[30px] pb-9"> 
+                   <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">نقش استعدادیابی در توسعه فردی و آینده‌ی موفقیت‌آمیز</a>
+                   <div class="flex items-center justify-between gap-2"> 
+                     <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
+                     <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
+                   </div>
+                 </div>
+               </div>
+            </SwiperSlide>
+            <SwiperSlide>
+               <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
+                 <div class="overflow-hidden"> 
+                  <img alt="img" src="../assets/img/blog3.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
+                 </div>
+                 <div class="p-[30px] pb-9"> 
+                   <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">نگاهی جامع به انواع استعدادها و روش‌های شناسایی آن‌ها</a>
+                   <div class="flex items-center justify-between gap-2"> 
+                     <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
+                     <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
+                   </div>
+                 </div>
+               </div>
+            </SwiperSlide>
+            <SwiperSlide>
+               <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
+                 <div class="overflow-hidden"> 
+                  <img alt="img" src="../assets/img/blog2.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
+                 </div>
+                 <div class="p-[30px] pb-9"> 
+                   <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">نقش استعدادیابی در توسعه فردی و آینده‌ی موفقیت‌آمیز</a>
+                   <div class="flex items-center justify-between gap-2"> 
+                     <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
+                     <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
+                   </div>
+                 </div>
+               </div>
+            </SwiperSlide>
+          </SwiperMain>
         </div>
       </div>
     </section>
@@ -1077,6 +1316,20 @@
 <script setup>
 import SwiperMain from "../components/Swiper/Main.vue";
 import { SwiperSlide } from "swiper/vue";
+import { ref } from "vue";
+
+// اولین آکاردئون به صورت پیش‌فرض باز است
+const activeIndex = ref(0);
+
+const toggleAccordion = (index) => {
+  // اگر روی آکاردئون باز کلیک شود، بسته می‌شود
+  if (activeIndex.value === index) {
+    activeIndex.value = null;
+  } else {
+    // در غیر این صورت آکاردئون جدید باز می‌شود
+    activeIndex.value = index;
+  }
+};
 </script>
 
 <style>
