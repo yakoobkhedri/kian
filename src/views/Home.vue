@@ -1012,7 +1012,7 @@
       </div>
     </section>
 
-    <section class="pt-24">
+    <section class="md:pt-24 pt-8">
       <div class="max-w-content mx-auto px-4">
         <div class="flex items-center gap-8">
           <div class="flex-grow bg-[#eeeeee] h-[1px]"></div>
@@ -1021,36 +1021,36 @@
           </h3>
           <div class="flex-grow bg-[#eeeeee] h-[1px]"></div>
         </div>
-        <div class="grid grid-cols-4 gap-4 mt-24">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-y-12 md:gap-4 mt-24">
           <div>
-            <div class="text-[80px] mb-3 flex items-center justify-center">
+            <div class="text-[70px] xl:text-[80px] mb-3 flex items-center justify-center">
               <span class="text-stroke-main text-transparent">70</span>
               <span class="text-[#001837]">+</span>
             </div>
-            <p class="text-[#595959] text-center">استاد برجسته استعدادیابی</p>
+            <p class="text-[#595959] text-center xl:text-base text-sm">استاد برجسته استعدادیابی</p>
           </div>
           <div>
-            <div class="text-[80px] mb-3 flex items-center justify-center">
+            <div class="text-[70px] xl:text-[80px] mb-3 flex items-center justify-center">
               <span class="text-stroke-main text-transparent">80000</span>
               <span class="text-[#001837]">+</span>
             </div>
-            <p class="text-[#595959] text-center">
+            <p class="text-[#595959] text-center xl:text-base text-sm">
               آزمون دهندگانی که کشف استعداد شده
             </p>
           </div>
           <div>
-            <div class="text-[80px] mb-3 flex items-center justify-center">
+            <div class="text-[70px] xl:text-[80px] mb-3 flex items-center justify-center">
               <span class="text-stroke-main text-transparent">100000</span>
               <span class="text-[#001837]">+</span>
             </div>
-            <p class="text-[#595959] text-center">آزمون برگزار شده</p>
+            <p class="text-[#595959] text-center xl:text-base text-sm">آزمون برگزار شده</p>
           </div>
           <div>
-            <div class="text-[80px] mb-3 flex items-center justify-center">
+            <div class="text-[70px] xl:text-[80px] mb-3 flex items-center justify-center">
               <span class="text-stroke-main text-transparent">25</span>
               <span class="text-[#001837]">+</span>
             </div>
-            <p class="text-[#595959] text-center">سال سابقه خدمات</p>
+            <p class="text-[#595959] text-center xl:text-base text-sm">سال سابقه خدمات</p>
           </div>
         </div>
       </div>
@@ -1058,31 +1058,31 @@
 
     <section class="pt-24">
       <div class="max-w-content mx-auto px-4">
-        <div class="grid grid-cols-2 gap-10">
+        <div class="grid lg:grid-cols-2 xl:gap-10 gap-4">
           <div>
             <img
               src="../assets/img/img.jpg"
               class="rounded-[30px] w-full h-full"
             />
           </div>
-          <div class="py-[60px] px-[30px] rounded-[30px] bg-[#f0f2f4]">
+          <div class="xl:py-[60px] py-8 px-5 xl:px-[30px] rounded-[30px] bg-[#f0f2f4]">
             <p class="text-[13px] font-bold text-[#001837] mb-1.5">
               سوالات مشتری
             </p>
             <h4
-              class="text-[55px] font-bold text-[#001837] leading-[70px] mb-12"
+              class="xl:text-[55px] lg:text-[36px] text-xl font-bold text-[#001837] xl:leading-[70px] mb-12"
             >
               از پرسش های متداول ما بیشتر یاد خواهید گرفت.
             </h4>
             <div>
               <div class="mb-5">
                 <div
-                  class="bg-white accordionBtn cursor-pointer text-[#001837] rounded-[30px] p-2 pr-10 flex items-center justify-between gap-3"
+                  class="bg-white accordionBtn cursor-pointer text-[#001837] rounded-[30px] p-2 pr-5 lg:pr-10 flex items-center justify-between gap-3"
                   @click="toggleAccordion(0)"
                 >
-                  <p>01. آزمون استعدادیابی برای چه سنینی مناسب است؟</p>
+                  <p class="text-sm sm:text-base">01. آزمون استعدادیابی برای چه سنینی مناسب است؟</p>
                   <div
-                    class="w-[50px] h-[50px] rounded-full relative flex-shrink-0 bg-[#001837]"
+                    class="sm:w-[50px] w-10 sm:h-[50px] h-10 rounded-full relative flex-shrink-0 bg-[#001837]"
                   >
                     <svg
                       class="plus transition-all absolute inset-0 m-auto w-[14px]"
@@ -1112,7 +1112,7 @@
                   class="accordionBody"
                   :class="{ hidden: activeIndex !== 0 }"
                 >
-                  <p class="py-7 px-10 text-[#616161]">
+                  <p class="sm:py-7 py-4 sm:px-10 px-4 text-[#616161] text-sm sm:text-base">
                     آزمون های استعدادیابی موسسه اندیشه کیان برای تمام سنین
                     برگزار و تحلیل می شوند
                   </p>
@@ -1120,12 +1120,12 @@
               </div>
               <div class="mb-5">
                 <div
-                  class="bg-white accordionBtn cursor-pointer text-[#001837] rounded-[30px] p-2 pr-10 flex items-center justify-between gap-3"
+                  class="bg-white accordionBtn cursor-pointer text-[#001837] rounded-[30px] p-2 pr-5 lg:pr-10 flex items-center justify-between gap-3"
                   @click="toggleAccordion(1)"
                 >
-                  <p>02. شرکت در آزمون هزینه دارد؟</p>
+                  <p class="text-sm sm:text-base">02. شرکت در آزمون هزینه دارد؟</p>
                   <div
-                    class="w-[50px] h-[50px] rounded-full relative flex-shrink-0 bg-[#001837]"
+                    class="sm:w-[50px] w-10 sm:h-[50px] h-10 rounded-full relative flex-shrink-0 bg-[#001837]"
                   >
                     <svg
                       class="plus transition-all absolute inset-0 m-auto w-[14px]"
@@ -1155,19 +1155,19 @@
                   class="accordionBody"
                   :class="{ hidden: activeIndex !== 1 }"
                 >
-                  <p class="py-7 px-10 text-[#616161]">
+                  <p class="sm:py-7 py-4 sm:px-10 px-4 text-[#616161] text-sm sm:text-base">
                     شرکت در آزمون استعدادیابی رایگان است
                   </p>
                 </div>
               </div>
               <div>
                 <div
-                  class="bg-white accordionBtn cursor-pointer text-[#001837] rounded-[30px] p-2 pr-10 flex items-center justify-between gap-3"
+                  class="bg-white accordionBtn cursor-pointer text-[#001837] rounded-[30px] p-2 pr-5 lg:pr-10 flex items-center justify-between gap-3"
                   @click="toggleAccordion(2)"
                 >
-                  <p>03. پس از کشف استعداد آیا برای من شغل پیدا می شود</p>
+                  <p class="text-sm sm:text-base">03. پس از کشف استعداد آیا برای من شغل پیدا می شود</p>
                   <div
-                    class="w-[50px] h-[50px] rounded-full relative flex-shrink-0 bg-[#001837]"
+                    class="sm:w-[50px] w-10 sm:h-[50px] h-10 rounded-full relative flex-shrink-0 bg-[#001837]"
                   >
                     <svg
                       class="plus transition-all absolute inset-0 m-auto w-[14px]"
@@ -1197,7 +1197,7 @@
                   class="accordionBody"
                   :class="{ hidden: activeIndex !== 2 }"
                 >
-                  <p class="py-7 px-10 text-[#616161]">
+                  <p class="sm:py-7 py-4 sm:px-10 px-4 text-[#616161] text-sm sm:text-base">
                     بله در صورت تمایل می توانید استعداد خود را با صاحبان کسب و
                     کار به اشتراک بگذارید
                   </p>
@@ -1209,9 +1209,9 @@
       </div>
     </section>
 
-    <section class="pt-24">
+    <section class="pt-24 mb-9">
       <div class="max-w-content mx-auto px-4">
-        <div class="flex items-start justify-between gap-2 mb-12">
+        <div class="flex flex-col sm:flex-row items-start justify-between gap-2 mb-8">
           <div>
             <p class="text-[13px] font-bold text-[#001837] mb-1.5">
               آخرین اخبار
@@ -1224,7 +1224,7 @@
           </div>
           <router-link
             to="/"
-            class="group transition-all rounded-[30px] gap-2 bg-[#fba311] hover:bg-[#001837] text-sm text-white w-[220px] h-[52px] flex items-center justify-center"
+            class="group transition-all rounded-[30px] gap-2 bg-[#fba311] hover:bg-[#001837] text-sm text-white mx-auto sm:mx-0 w-[220px] h-[52px] flex items-center justify-center"
           >
             <p
               class="rounded-[30px] bg-primary h-full flex items-center justify-center"
@@ -1237,77 +1237,75 @@
             />
           </router-link>
         </div>
-        <div> 
-           <SwiperMain
-            class="w-full relative !h-[360px] sm:!h-auto"
-            :slides-per-view="1"
-            :space-between="40"
-            :pagination="false"
-            :loop="false"
-            :autoplay="true"
-              :breakpoints="{
-                    768: { slidesPerView: 2 },
-                    1200: { slidesPerView: 3 },
-                  }"
-          >
-            <SwiperSlide>
-               <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
-                 <div class="overflow-hidden"> 
-                  <img alt="img" src="../assets/img/blog1.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
-                 </div>
-                 <div class="p-[30px] pb-9"> 
-                   <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">روش‌های نوین استعدادیابی بزرگسالان در ایران: راهنمای کامل و جامع</a>
-                   <div class="flex items-center justify-between gap-2"> 
-                     <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
-                     <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
-                   </div>
-                 </div>
-               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-               <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
-                 <div class="overflow-hidden"> 
-                  <img alt="img" src="../assets/img/blog2.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
-                 </div>
-                 <div class="p-[30px] pb-9"> 
-                   <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">نقش استعدادیابی در توسعه فردی و آینده‌ی موفقیت‌آمیز</a>
-                   <div class="flex items-center justify-between gap-2"> 
-                     <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
-                     <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
-                   </div>
-                 </div>
-               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-               <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
-                 <div class="overflow-hidden"> 
-                  <img alt="img" src="../assets/img/blog3.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
-                 </div>
-                 <div class="p-[30px] pb-9"> 
-                   <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">نگاهی جامع به انواع استعدادها و روش‌های شناسایی آن‌ها</a>
-                   <div class="flex items-center justify-between gap-2"> 
-                     <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
-                     <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
-                   </div>
-                 </div>
-               </div>
-            </SwiperSlide>
-            <SwiperSlide>
-               <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
-                 <div class="overflow-hidden"> 
-                  <img alt="img" src="../assets/img/blog2.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
-                 </div>
-                 <div class="p-[30px] pb-9"> 
-                   <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">نقش استعدادیابی در توسعه فردی و آینده‌ی موفقیت‌آمیز</a>
-                   <div class="flex items-center justify-between gap-2"> 
-                     <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
-                     <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
-                   </div>
-                 </div>
-               </div>
-            </SwiperSlide>
-          </SwiperMain>
-        </div>
+        <SwiperMain
+         class="w-full relative !h-[360px] sm:!h-auto px-2 py-4"
+         :slides-per-view="1"
+         :space-between="40"
+         :pagination="false"
+         :loop="false"
+         :autoplay="true"
+           :breakpoints="{
+                 768: { slidesPerView: 2 },
+                 1200: { slidesPerView: 3 },
+               }"
+       >
+         <SwiperSlide>
+            <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
+              <div class="overflow-hidden"> 
+               <img alt="img" src="../assets/img/blog1.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
+              </div>
+              <div class="p-[30px] pb-9"> 
+                <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">روش‌های نوین استعدادیابی بزرگسالان در ایران: راهنمای کامل و جامع</a>
+                <div class="flex items-center justify-between gap-2"> 
+                  <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
+                  <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
+                </div>
+              </div>
+            </div>
+         </SwiperSlide>
+         <SwiperSlide>
+            <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
+              <div class="overflow-hidden"> 
+               <img alt="img" src="../assets/img/blog2.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
+              </div>
+              <div class="p-[30px] pb-9"> 
+                <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">نقش استعدادیابی در توسعه فردی و آینده‌ی موفقیت‌آمیز</a>
+                <div class="flex items-center justify-between gap-2"> 
+                  <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
+                  <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
+                </div>
+              </div>
+            </div>
+         </SwiperSlide>
+         <SwiperSlide>
+            <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
+              <div class="overflow-hidden"> 
+               <img alt="img" src="../assets/img/blog3.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
+              </div>
+              <div class="p-[30px] pb-9"> 
+                <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">نگاهی جامع به انواع استعدادها و روش‌های شناسایی آن‌ها</a>
+                <div class="flex items-center justify-between gap-2"> 
+                  <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
+                  <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
+                </div>
+              </div>
+            </div>
+         </SwiperSlide>
+         <SwiperSlide>
+            <div class="rounded-[30px] overflow-hidden border border-[#dde1e4] group"> 
+              <div class="overflow-hidden"> 
+               <img alt="img" src="../assets/img/blog2.PNG" class="rounded-[30px] transition-all group-hover:scale-105 w-full h-[275px]" />
+              </div>
+              <div class="p-[30px] pb-9"> 
+                <a class="text-2xl hover:text-[#fba311] line-clamp-2 mb-2.5">نقش استعدادیابی در توسعه فردی و آینده‌ی موفقیت‌آمیز</a>
+                <div class="flex items-center justify-between gap-2"> 
+                  <a class="text-[#9b9b9b] text-[13px] hover:text-[#fba311]">دسته‌بندی نشده</a>
+                  <p class="text-[#565656] text-sm">۶ تیر, ۱۴۰۴</p>
+                </div>
+              </div>
+            </div>
+         </SwiperSlide>
+       </SwiperMain>
       </div>
     </section>
   </main>
